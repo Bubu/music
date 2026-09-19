@@ -1,6 +1,11 @@
 ## [Unreleased]
 
 ### Added
+- Subsonic: Transcoding support in the `stream` endpoint
+  [#163](https://github.com/nc-music/music/pull/163) @ipoupaille
+  * Enabled by default if `ffmpeg` is available in the path
+  * To opt out, configure `'music.use_ffpmeg' => false`
+  * To use out-of-path ffmpeg, configure `'music.use_ffpmeg' => <path_to_ffmpeg_executable>`
 
 ### Changed
 
